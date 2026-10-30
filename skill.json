@@ -1,0 +1,10 @@
+{
+  "name": "genpark-wukong-enterprise-brain",
+  "version": "1.0.0",
+  "description": "GenPark Wukong Enterprise Brain - Knowledge graph relation path finder, multi-hop semantic query resolver, and contradictory fact consensus arbiter with zero dependencies.",
+  "tools": [
+    "find_knowledge_graph_relation_path",
+    "resolve_multihop_semantic_query",
+    "reconcile_conflicting_fact_consensus"
+  ]
+}
