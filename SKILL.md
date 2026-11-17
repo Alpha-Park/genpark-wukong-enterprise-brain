@@ -11,6 +11,16 @@ metadata:
 
 This skill provides agents with "native-level" access to enterprise ecosystems. It bridges the gap between communication (chat), planning (calendar), and knowledge (docs) to provide a unified productivity layer.
 
+## MCP runtime requirements
+
+The standard-library-only policy applies to direct `client.py` use. Running `mcp_server.py` requires Python 3.10+ and the official `mcp` SDK (`mcp>=1.0.0,<2`) from `requirements.txt`. Install it into your chosen environment from the repository checkout:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Configure the MCP client with that environment's absolute Python executable path and the absolute path to `mcp_server.py`. The client launches a local STDIO process; a GitHub URL is not a remote MCP endpoint.
+
 ## Instructions
 1. **Contextual Awareness:** Access and analyze project-related data across chat logs, emails, and shared documents.
 2. **Scheduling Orchestration:** Perform cross-calendar availability checks and automate meeting scheduling with intelligent conflict resolution.
