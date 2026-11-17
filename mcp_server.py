@@ -49,9 +49,7 @@ def reconcile_conflicting_fact_consensus(claims_json: str) -> str:
     return json.dumps(res, indent=2)
 
 def main():
-    print("Testing Enterprise Brain:")
-    t = [{"subject": "Alice", "predicate": "manager_of", "object": "Bob"}]
-    print(find_knowledge_graph_relation_path(json.dumps(t), "Alice", "Bob"))
+    mcp.run(transport="stdio")
 
 if __name__ == "__main__":
     main()
